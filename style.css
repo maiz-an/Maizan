@@ -755,3 +755,184 @@ span{
         grid-template-columns: repeat(1,1fr);
     }
 }
+
+/* -------------------Media Queries for iPad and Mobile-------------------------- */
+
+@media(max-width:1024px) {
+    /* iPads in landscape/portrait mode */
+
+    .home {
+        flex-direction: column-reverse;
+        gap: 5rem;
+    }
+
+    .home-content {
+        text-align: center;
+        margin-top: 5rem;
+        max-width: 100%;
+    }
+
+    .home-img {
+        width: 100%;
+    }
+
+    .home-img img {
+        width: 60vw;
+    }
+
+    .social-media a {
+        margin: 2rem 1rem;
+    }
+
+    .education {
+        padding: 8rem 5%;
+    }
+
+    .skills, .Projects {
+        padding: 8rem 5%;
+    }
+
+    .skill-box, .Projects-box {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .skill, .Project {
+        width: 100%;
+    }
+
+    .nav-bar a {
+        font-size: 2rem;
+    }
+
+    footer {
+        padding: 2rem 5%;
+    }
+}
+
+@media(max-width:768px) {
+    /* iPads and Tablets in portrait mode, mobile phones */
+
+    html {
+        font-size: 50%;
+    }
+
+    header {
+        padding: 2rem 5%;
+    }
+
+    section {
+        padding: 8rem 5% 4rem;
+    }
+
+    .home {
+        gap: 4rem;
+    }
+
+    .home-content h1 {
+        font-size: 5rem;
+    }
+
+    .home-content h3 {
+        font-size: 2.8rem;
+    }
+
+    .home-content p {
+        font-size: 1.4rem;
+        line-height: 1.6;
+    }
+
+    .home-img img {
+        width: 70vw;
+    }
+
+    .skills h2, .Projects h2 {
+        font-size: 4rem;
+    }
+
+    .skill-box, .Projects-box {
+        flex-direction: column;
+    }
+
+    .skill, .Project {
+        width: 100%;
+    }
+
+    .nav-bar {
+        width: 80%;
+    }
+
+    footer {
+        padding: 4rem 5%;
+    }
+
+    .footer ul {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .footer .social {
+        gap: 20px;
+    }
+}
+
+@media(max-width:576px) {
+    /* Mobile phones - small screen */
+
+    html {
+        font-size: 45%;
+    }
+
+    header {
+        padding: 1.5rem 5%;
+    }
+
+    section {
+        padding: 6rem 5% 3rem;
+    }
+
+    .home-content h1 {
+        font-size: 4rem;
+    }
+
+    .home-content h3 {
+        font-size: 2.5rem;
+    }
+
+    .home-content p {
+        font-size: 1.3rem;
+    }
+
+    .home-img img {
+        width: 80vw;
+    }
+
+    .skills h2, .Projects h2 {
+        font-size: 3.5rem;
+    }
+
+    .skill-box, .Projects-box {
+        flex-direction: column;
+    }
+
+    .skill, .Project {
+        width: 100%;
+    }
+
+    .nav-bar {
+        width: 100%;
+    }
+
+    footer {
+        padding: 3rem 5%;
+    }
+
+    .footer ul {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .footer .social {
+        gap: 15px;
+    }
+}
