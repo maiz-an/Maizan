@@ -726,19 +726,6 @@ span{
         margin: 5rem 4rem;
     }
 
-    .home-content h3{
-        font-size: 2.6rem;
-    }
-
-    .home-content h1{
-        font-size: 8rem;
-        margin-top: 3rem;
-    }
-
-    .home-content p{
-        max-width: 600px;
-        margin: 0 auto;
-    }
 
     .home-img img{
         width: 56vw;
@@ -761,25 +748,25 @@ span{
 @media(max-width:1024px) {
     /* iPads in landscape/portrait mode */
 
-    .home {
-        flex-direction: column-reverse;
-        gap: 5rem;
-    }
-
+ 
     .home-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Center aligns all elements */
         text-align: center;
-        margin-top: 5rem;
+        justify-content: center;
+        margin-top: 3rem;
         max-width: 100%;
+    }
+    .home-content .btn {
+        margin: 2rem auto 0; /* This centers the Download CV button */
     }
 
     .home-img {
         width: 100%;
     }
 
-    .home-img img {
-        width: 60vw;
-    }
-
+    
     .social-media a {
         margin: 2rem 1rem;
     }
@@ -838,8 +825,8 @@ span{
     }
 
     .home-content p {
-        font-size: 1.4rem;
-        line-height: 1.6;
+        font-size: 1.6rem;
+        line-height: 1.8;
     }
 
     .home-img img {
@@ -867,13 +854,23 @@ span{
     }
 
     .footer ul {
-        flex-direction: column;
-        gap: 20px;
+        display: flex;
+        flex-direction: column; 
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        gap: 20px; 
+        text-align: center; 
     }
-
+    
     .footer .social {
-        gap: 20px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column; /* Aligns the social media icons vertically */
+        gap: 20px; /* Adds space between the icons */
+        margin-bottom: 15px;
     }
+    
 }
 
 @media(max-width:576px) {
@@ -900,7 +897,7 @@ span{
     }
 
     .home-content p {
-        font-size: 1.3rem;
+        font-size: 1.6rem;
     }
 
     .home-img img {
@@ -934,5 +931,9 @@ span{
 
     .footer .social {
         gap: 15px;
+    }
+
+    .home-content .btn {
+        margin: 2rem auto 0;
     }
 }
