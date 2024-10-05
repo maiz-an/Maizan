@@ -1184,5 +1184,46 @@ section.in-view {
         background-color: var(--main-color); 
         border-radius: 10px;
     }
+    .header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding: 3rem 8% 3rem;
+        background: #1a1e25;
+        backdrop-filter: blur(10px);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        z-index: 5;
+    }
     
+}
+
+@media(max-width:500px){
+    .Projects-box::-webkit-scrollbar {
+        height: 10px;
+    }
+    .Projects-box::-webkit-scrollbar:hover {
+        transition: 0.1s ease-in-out;
+        cursor: pointer;
+    }
+    .Projects-box::-webkit-scrollbar-thumb {
+        background-color: var(--main-color); 
+        border-radius: 10px;
+    }
+    
+    .header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding: 3rem 8% 3rem;
+        background: #1a1e25;
+        backdrop-filter: blur(10px);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        z-index: 5;
+    }
 }
