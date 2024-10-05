@@ -1173,5 +1173,16 @@ section.in-view {
         white-space: normal; 
         overflow-wrap: break-word; 
     }
+    .Projects-box::-webkit-scrollbar {
+        height: 7px;
+    }
+    .Projects-box::-webkit-scrollbar:hover {
+        transition: 0.1s ease-in-out;
+        cursor: pointer;
+    }
+    .Projects-box::-webkit-scrollbar-thumb {
+        background-color: var(--main-color); 
+        border-radius: 10px;
+    }
     
 }
