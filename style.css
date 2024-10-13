@@ -218,7 +218,7 @@ span{
     background: transparent;
     border: 2px solid var(--main-color);
     border-radius: 50%;
-    font-size: 20px;
+    font-size: 28px;
     color: var(--main-color);
     margin: 3rem 1.5rem 3rem 0;
     opacity: 0;
@@ -1073,6 +1073,13 @@ section.in-view {
         left: 7%;
         height: 1190px;
     }
+    .home-content h1 {
+        margin-top: 0px;
+    }
+    .home-img img {
+       
+        top: 5px;
+    }
     
     .social-media a {
         display: inline-flex;
@@ -1097,6 +1104,7 @@ section.in-view {
         font-weight: 500;
         line-height: 1.8;
         max-width: 1000px;
+        text-align: center;
         opacity: 0;
         animation: slideLeft 1s ease forwards;
         animation-delay: 1.2s; 
@@ -1105,7 +1113,7 @@ section.in-view {
         margin-bottom: 2rem;
         margin-top: 1.5rem;
         min-width: 100%;
-        font-size: 1.6rem;
+        font-size: 1.8rem;
         opacity: 0;
         animation: slideBottom 1s ease forwards;
         animation-delay: 0.7s; 
@@ -1122,7 +1130,7 @@ section.in-view {
         gap: 30px; 
         padding-bottom: 40px; 
         padding-top: 40px;
-        padding-left: 1px;
+        padding-left: 40px;
         padding-right: 40px;
     }
     
@@ -1132,7 +1140,7 @@ section.in-view {
         padding: 20px;
         border-radius: 10px;
         min-width: 300px; 
-        min-height: 290px;
+        min-height: 240px;
         border: 1.5px solid var(--main-color);
         box-shadow: 0 0 3px var(--main-color);
         scroll-snap-align: start; 
@@ -1197,28 +1205,56 @@ section.in-view {
         align-items: center;
         z-index: 5;
     }
+    .education {
+        margin-top: -10rem;
+        }
+        .education h2 {
+            margin-top: -5rem;
+        }
+        .timeline-items::before{
+            height: 116rem;
+        }
     
+        .timeline-content p{
+            font-size: 14px;
+        }
+    
+        .timeline-content{
+            padding: 20px 30px;
+        }
+    
+        .skills h2 {
+            font-size: 6rem;
+        }
+        .skill p {
+            font-size: 14px;
+        }
+    
+        .Projects {
+            padding: 10px 10px;
+    
+        }
+        .Projects h2 {
+            font-size: 6rem;
+        }
+        
+        .footer{
+            margin-top: -20rem
+        }
 }
 
-@media(max-width:500px){
-    .Projects-box::-webkit-scrollbar {
-        height: 10px;
+
+@media(max-width:375px){
+    html{
+        font-size: 42%;
     }
-    .Projects-box::-webkit-scrollbar:hover {
-        transition: 0.1s ease-in-out;
-        cursor: pointer;
-    }
-    .Projects-box::-webkit-scrollbar-thumb {
-        background-color: var(--main-color); 
-        border-radius: 10px;
-    }
-    
+
     .header {
         position: fixed;
-        top: 0;
+        top: 0px;
         left: 0;
         width: 100%;
-        padding: 3rem 8% 3rem;
+        padding: 4rem 10% 2.5rem;
         background: #1a1e25;
         backdrop-filter: blur(10px);
         display: flex;
@@ -1226,4 +1262,99 @@ section.in-view {
         align-items: center;
         z-index: 5;
     }
+
+    section {
+        min-height: fit-content;        
+    }
+    .home-content h3 {
+        font-size: 2rem;
+    }
+    .home-img img {
+       
+        top: 5px;
+    }
+
+    .social-media a {
+        display:inline-flex;
+        justify-content: center;
+        align-items: center;
+        width: 4rem;
+        height: 4rem;
+        background: transparent;
+        border: 2px solid var(--main-color);
+        border-radius: 50%;
+        font-size: 22px;
+        color: var(--main-color);
+        margin: 3rem 1.5rem 3rem 0;
+        opacity: 0;
+        animation: slideLeft 1s ease forwards;
+        animation-fill-mode: forwards;
+        animation-delay: calc(0.2s * var(--i));
+    }
+    .education {
+    margin-top: -10rem;
+    }
+    .education h2 {
+        margin-top: -5rem;
+    }
+    .timeline-items::before{
+        height: 116rem;
+    }
+
+    .timeline-content p{
+        font-size: 14px;
+    }
+
+    .timeline-content{
+        padding: 20px 30px;
+    }
+
+    .skills h2 {
+        font-size: 6rem;
+    }
+    .skill p {
+        font-size: 14px;
+    }
+
+    .Projects {
+        padding: 10px 10px;
+
+    }
+    .Projects h2 {
+        font-size: 6rem;
+    }
+
+    .Project {
+        flex: 0 0 30%;
+        background: #2c303a;
+        font-size: 14px;
+        padding: 20px;
+        border-radius: 10px;
+        min-width: 300px; 
+        min-height: 200px;
+        border: 1.5px solid var(--main-color);
+        box-shadow: 0 0 3px var(--main-color);
+        scroll-snap-align: start; 
+    }
+
+    .Projects-box {
+        display: flex; 
+        overflow-x: auto; 
+        white-space: nowrap; 
+        scroll-snap-type: x mandatory; 
+        gap: 30px; 
+        padding-bottom: 40px; 
+        padding-top: 40px;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+    .Project p {
+        font-size: 14px;
+    }
+
+
+    .footer{
+        margin-top: 5px;
+    }
+
 }
