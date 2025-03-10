@@ -252,4 +252,23 @@
     </script>
     
 </body>
+                <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            // Create an Intersection Observer to observe when elements enter the viewport
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    // If the section is in view, add the 'in-view' class
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('in-view');
+                    }
+                });
+            });
+    
+            // Observe all the sections you want to animate
+            const sections = document.querySelectorAll('section');
+            sections.forEach(section => {
+                observer.observe(section);
+            });
+        });
+    </script>
 </html>
